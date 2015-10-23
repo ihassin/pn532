@@ -3,16 +3,12 @@
 
 CMakeFiles/pn532.dir/command-tests.c.o: command-tests.c
 CMakeFiles/pn532.dir/command-tests.c.o: hlp/hlp.h
-CMakeFiles/pn532.dir/command-tests.c.o: unity.h
-CMakeFiles/pn532.dir/command-tests.c.o: unity_internals.h
+CMakeFiles/pn532.dir/command-tests.c.o: unity/unity.h
+CMakeFiles/pn532.dir/command-tests.c.o: unity/unity_internals.h
 
 CMakeFiles/pn532.dir/main.c.o: command-tests.h
 CMakeFiles/pn532.dir/main.c.o: main.c
 CMakeFiles/pn532.dir/main.c.o: unity-tests.h
-CMakeFiles/pn532.dir/main.c.o: unity.h
-CMakeFiles/pn532.dir/main.c.o: unity_internals.h
-
-CMakeFiles/pn532.dir/unity.c.o: unity.c
-CMakeFiles/pn532.dir/unity.c.o: unity.h
-CMakeFiles/pn532.dir/unity.c.o: unity_internals.h
+CMakeFiles/pn532.dir/main.c.o: unity/unity.h
+CMakeFiles/pn532.dir/main.c.o: unity/unity_internals.h
 

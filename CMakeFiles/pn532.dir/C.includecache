@@ -9,10 +9,12 @@
 /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.c
 stdlib.h
 -
+string.h
+-
 hlp/hlp.h
 /Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/hlp.h
-unity.h
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
+unity/unity.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity.h
 
 /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.h
 
@@ -23,24 +25,18 @@ unity-tests.h
 /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity-tests.h
 
 /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity-tests.h
-unity.h
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
+unity/unity.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity.h
 command-tests.h
 /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.h
 
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.c
-unity.h
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
-string.h
--
-
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity.h
 unity_internals.h
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity_internals.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity_internals.h
 
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity_internals.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity_internals.h
 unity_config.h
-/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity_config.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity_config.h
 setjmp.h
 -
 stdint.h

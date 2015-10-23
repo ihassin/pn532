@@ -12,13 +12,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.3.2/CMakeSystem.cmake"
   "CMakeLists.txt"
   "hlp/CMakeLists.txt"
+  "unity/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeUnixFindMake.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/Compiler/Clang.cmake"
@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "unity/CMakeFiles/CMakeDirectoryInformation.cmake"
   "hlp/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -49,4 +50,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pn532.dir/DependInfo.cmake"
   "CMakeFiles/hlp.dir/DependInfo.cmake"
+  "CMakeFiles/unity.dir/DependInfo.cmake"
   )

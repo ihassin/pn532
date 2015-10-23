@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ThoughtWorks/Documents/projects/embedded/pn532
+# Install script for directory: /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,20 +27,3 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/cmake_install.cmake")
-  include("/Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/cmake_install.cmake")
-
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ThoughtWorks/Documents/projects/embedded/pn532/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

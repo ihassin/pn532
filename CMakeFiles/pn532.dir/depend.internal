@@ -4,15 +4,11 @@
 CMakeFiles/pn532.dir/command-tests.c.o
  /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.c
  /Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/hlp.h
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity_internals.h
+ /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity.h
+ /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity_internals.h
 CMakeFiles/pn532.dir/main.c.o
  /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.h
  /Users/ThoughtWorks/Documents/projects/embedded/pn532/main.c
  /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity-tests.h
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity_internals.h
-CMakeFiles/pn532.dir/unity.c.o
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.c
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity.h
- /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity_internals.h
+ /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity.h
+ /Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity_internals.h

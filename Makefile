@@ -136,6 +136,19 @@ pn532/fast:
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/build
 .PHONY : pn532/fast
 
+#=============================================================================
+# Target rules for targets named unity
+
+# Build rule for target.
+unity: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unity
+.PHONY : unity
+
+# fast build rule for target.
+unity/fast:
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/build
+.PHONY : unity/fast
+
 command-tests.o: command-tests.c.o
 
 .PHONY : command-tests.o
@@ -217,32 +230,32 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/main.c.s
 .PHONY : main.c.s
 
-unity.o: unity.c.o
+unity/unity.o: unity/unity.c.o
 
-.PHONY : unity.o
+.PHONY : unity/unity.o
 
 # target to build an object file
-unity.c.o:
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unity.c.o
-.PHONY : unity.c.o
+unity/unity.c.o:
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/unity/unity.c.o
+.PHONY : unity/unity.c.o
 
-unity.i: unity.c.i
+unity/unity.i: unity/unity.c.i
 
-.PHONY : unity.i
+.PHONY : unity/unity.i
 
 # target to preprocess a source file
-unity.c.i:
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unity.c.i
-.PHONY : unity.c.i
+unity/unity.c.i:
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/unity/unity.c.i
+.PHONY : unity/unity.c.i
 
-unity.s: unity.c.s
+unity/unity.s: unity/unity.c.s
 
-.PHONY : unity.s
+.PHONY : unity/unity.s
 
 # target to generate assembly for a file
-unity.c.s:
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unity.c.s
-.PHONY : unity.c.s
+unity/unity.c.s:
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/unity/unity.c.s
+.PHONY : unity/unity.c.s
 
 # Help Target
 help:
@@ -254,6 +267,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hlp"
+	@echo "... unity"
 	@echo "... command-tests.o"
 	@echo "... command-tests.i"
 	@echo "... command-tests.s"
@@ -263,9 +277,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... unity.o"
-	@echo "... unity.i"
-	@echo "... unity.s"
+	@echo "... unity/unity.o"
+	@echo "... unity/unity.i"
+	@echo "... unity/unity.s"
 .PHONY : help
 
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/hlp.c" "/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles/hlp.dir/hlp/hlp.c.o"
+  "/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/unity.c" "/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles/unity.dir/unity/unity.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

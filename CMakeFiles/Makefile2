@@ -100,10 +100,11 @@ clean: CMakeFiles/hlp.dir/clean
 # Target rules for target CMakeFiles/pn532.dir
 
 # All Build rule for target.
+CMakeFiles/pn532.dir/all: CMakeFiles/unity.dir/all
 CMakeFiles/pn532.dir/all: CMakeFiles/hlp.dir/all
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/depend
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=3,4,5,6 "Built target pn532"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=3,4,5 "Built target pn532"
 .PHONY : CMakeFiles/pn532.dir/all
 
 # Include target in all.
@@ -113,7 +114,7 @@ all: CMakeFiles/pn532.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pn532.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pn532.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 0
 .PHONY : CMakeFiles/pn532.dir/rule
@@ -132,6 +133,61 @@ CMakeFiles/pn532.dir/clean:
 clean: CMakeFiles/pn532.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/unity.dir
+
+# All Build rule for target.
+CMakeFiles/unity.dir/all:
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/depend
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=6,7 "Built target unity"
+.PHONY : CMakeFiles/unity.dir/all
+
+# Include target in all.
+all: CMakeFiles/unity.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/unity.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/unity.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 0
+.PHONY : CMakeFiles/unity.dir/rule
+
+# Convenience name for target.
+unity: CMakeFiles/unity.dir/rule
+
+.PHONY : unity
+
+# clean rule for target.
+CMakeFiles/unity.dir/clean:
+	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/clean
+.PHONY : CMakeFiles/unity.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/unity.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory unity
+
+# Convenience name for "all" pass in the directory.
+unity/all:
+
+.PHONY : unity/all
+
+# Convenience name for "clean" pass in the directory.
+unity/clean:
+
+.PHONY : unity/clean
+
+# Convenience name for "preinstall" pass in the directory.
+unity/preinstall:
+
+.PHONY : unity/preinstall
 
 #=============================================================================
 # Directory level rules for directory hlp
