@@ -27,7 +27,7 @@ void creates_get_version_frame(void)
     TEST_ASSERT_EQUAL(frame->payload.tfi, kOutgoingTFI);
     TEST_ASSERT_EQUAL(frame->len, sizeof(frame->payload));
     TEST_ASSERT_EQUAL(frame->lcs, hlp_compute_checksum(&frame->len, (unsigned char) (sizeof(frame->len))));
-    TEST_ASSERT_EQUAL(frame->dcs, hlp_compute_checksum(&frame->payload, (unsigned char) (sizeof(frame->payload))));
+    TEST_ASSERT_EQUAL(frame->dcs, hlp_compute_checksum((unsigned char *) &frame->payload, (unsigned char) (sizeof(frame->payload))));
 
     free(frame);
 }
@@ -36,7 +36,7 @@ void computes_data_checksum(void)
 {
     unsigned char *data = (unsigned char *) "some data";
 
-    TEST_ASSERT_EQUAL(hlp_compute_checksum(data, strlen(data)), 146);
+    TEST_ASSERT_EQUAL(hlp_compute_checksum(data, strlen((const char *) data)), 146);
 }
 
 void computes_int_checksum(void)
