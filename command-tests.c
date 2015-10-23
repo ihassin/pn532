@@ -26,8 +26,8 @@ void creates_get_version_frame(void)
 
     TEST_ASSERT_EQUAL(frame->payload.tfi, kOutgoingTFI);
     TEST_ASSERT_EQUAL(frame->len, sizeof(frame->payload));
-    TEST_ASSERT_EQUAL(frame->lcs, compute_checksum(&frame->len, sizeof(frame->len)));
-    TEST_ASSERT_EQUAL(frame->dcs, compute_checksum(&frame->payload, sizeof(frame->payload)));
+    TEST_ASSERT_EQUAL(frame->lcs, compute_checksum(&frame->len, (unsigned char) (sizeof(frame->len))));
+    TEST_ASSERT_EQUAL(frame->dcs, compute_checksum(&frame->payload, (unsigned char) (sizeof(frame->payload))));
 
     free(frame);
 }
