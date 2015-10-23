@@ -37,6 +37,6 @@ HLPCommandFrame *hlp_alloc_command_frame(void);
 HLPCommandFrame *hlp_init_command_frame(HLPCommandFrame *frame);
 HLPCommandFrame *hlp_make_get_version_frame(HLPCommandFrame *frame);
 
-unsigned char compute_checksum(unsigned char *data, int length);
+unsigned char hlp_compute_checksum(unsigned char *data, int length);
 
 #endif //PN532_HLP_H

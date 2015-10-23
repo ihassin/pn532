@@ -36,7 +36,7 @@ HLPCommandFrame *hlp_make_get_version_frame(HLPCommandFrame *frame)
     return(frame);
 }
 
-unsigned char compute_checksum(unsigned char *data, int length)
+unsigned char hlp_compute_checksum(unsigned char *data, int length)
 {
     assert(data);
 
