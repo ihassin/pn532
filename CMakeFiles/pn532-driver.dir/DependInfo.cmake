@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/pn532.c" "/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles/pn532-driver.dir/pn532-driver/pn532.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

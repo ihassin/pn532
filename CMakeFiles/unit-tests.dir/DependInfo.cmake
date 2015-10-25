@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ThoughtWorks/Documents/projects/embedded/pn532/unit-tests/command-tests.c" "/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles/unit-tests.dir/unit-tests/command-tests.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
