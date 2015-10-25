@@ -3,4 +3,5 @@ compiler:
   - gcc
 script:
   cmake .
+  ./pn532
 
