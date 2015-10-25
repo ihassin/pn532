@@ -100,10 +100,10 @@ clean: CMakeFiles/hlp.dir/clean
 # Target rules for target CMakeFiles/pn532.dir
 
 # All Build rule for target.
+CMakeFiles/pn532.dir/all: CMakeFiles/unity.dir/all
 CMakeFiles/pn532.dir/all: CMakeFiles/hlp.dir/all
 CMakeFiles/pn532.dir/all: CMakeFiles/unit-tests.dir/all
 CMakeFiles/pn532.dir/all: CMakeFiles/pn532-driver.dir/all
-CMakeFiles/pn532.dir/all: CMakeFiles/unity.dir/all
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/depend
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=3,4,5 "Built target pn532"
