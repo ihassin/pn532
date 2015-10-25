@@ -6,7 +6,7 @@
 #define PN532_UNITY_TESTS_H
 
 #ifndef UNITY_FRAMEWORK_H
-#include "unity/unity.h"
+#include "../unity/unity.h"
 #endif
 
 #ifndef PN532_COMMAND_TESTS_H

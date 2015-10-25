@@ -2,11 +2,13 @@
 #include <string.h>
 
 #ifndef PN532_HLP_H
-#include "hlp/hlp.h"
+#include "../hlp/hlp.h"
 #endif
 
 #ifndef PN532_UNITY_TESTS_H
-#include "unity/unity.h"
+#include "../unity/unity.h"
+#include "../pn532-driver/pn532.h"
+
 #endif
 
 void creates_command_frame(void)
@@ -28,6 +30,21 @@ void creates_get_version_frame(void)
     TEST_ASSERT_EQUAL(frame->len, sizeof(frame->payload));
     TEST_ASSERT_EQUAL(frame->lcs, hlp_compute_checksum(&frame->len, (unsigned char) (sizeof(frame->len))));
     TEST_ASSERT_EQUAL(frame->dcs, hlp_compute_checksum((unsigned char *) &frame->payload, (unsigned char) (sizeof(frame->payload))));
+
+    free(frame);
+}
+
+void gets_version(void)
+{
+    HLPCommandFrame *frame = MAKE_GET_VERSION_FRAME;
+    unsigned char ic, ver, rev, support;
+
+    TEST_ASSERT_EQUAL(0, pn532_get_version(&ic, &ver, &rev, &support));
+
+    TEST_ASSERT_EQUAL(0x00, ic);
+    TEST_ASSERT_EQUAL(0xFF, ver);
+    TEST_ASSERT_EQUAL(0x06, rev);
+    TEST_ASSERT_EQUAL(0xFA, support);
 
     free(frame);
 }
