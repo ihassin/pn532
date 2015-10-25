@@ -1,4 +1,6 @@
-#include <assert.h>
+#ifndef __SYSTEM__H__
+#include "system.h"
+#endif
 
 #ifndef PN532_PN532_H
 #include "pn532.h"
@@ -20,14 +22,15 @@ int pn532_get_version(unsigned char *ic, unsigned char *ver, unsigned char *rev,
     int error_code = pn532_write(frame);
     assert(error_code == kNoError);
 
-    char *response = pn532_read_ack(ack);
+    unsigned char *response = pn532_read_ack(ack);
+    assert(memcmp(ack, response, sizeof(ack)) == 0);
 
-    response = pn532_read(version_buffer);
+    response = (unsigned char *) pn532_read((char *) version_buffer);
 
-    *ic         = (unsigned char ) response[0];
-    *ver        = (unsigned char ) response[1];
-    *rev        = (unsigned char ) response[2];
-    *support    = (unsigned char ) response[3];
+    *ic         = response[0];
+    *ver        = response[1];
+    *rev        = response[2];
+    *support    = response[3];
 
     return(kNoError);
 }

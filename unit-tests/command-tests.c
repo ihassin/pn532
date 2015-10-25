@@ -1,5 +1,6 @@
-#include <stdlib.h>
-#include <string.h>
+#ifndef __SYSTEM__H__
+#include "system.h"
+#endif
 
 #ifndef PN532_HLP_H
 #include "../hlp/hlp.h"
