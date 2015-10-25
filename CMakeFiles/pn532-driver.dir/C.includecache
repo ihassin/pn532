@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/hlp.h
+
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/pn532.c
+system.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/system.h
+pn532.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/pn532.h
+
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/pn532.h
+../hlp/hlp.h
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/hlp.h
+
+/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/system.h
+assert.h
+-
+string.h
+-
+

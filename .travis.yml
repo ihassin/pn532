@@ -3,5 +3,4 @@ compiler:
   - gcc
 script:
   make
-  ./pn532
 

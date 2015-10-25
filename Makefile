@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/ThoughtWorks/Documents/projects/embedded/pn532
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.3.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.3.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -137,6 +137,32 @@ pn532/fast:
 .PHONY : pn532/fast
 
 #=============================================================================
+# Target rules for targets named pn532-driver
+
+# Build rule for target.
+pn532-driver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pn532-driver
+.PHONY : pn532-driver
+
+# fast build rule for target.
+pn532-driver/fast:
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/build
+.PHONY : pn532-driver/fast
+
+#=============================================================================
+# Target rules for targets named unit-tests
+
+# Build rule for target.
+unit-tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unit-tests
+.PHONY : unit-tests
+
+# fast build rule for target.
+unit-tests/fast:
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/build
+.PHONY : unit-tests/fast
+
+#=============================================================================
 # Target rules for targets named unity
 
 # Build rule for target.
@@ -148,33 +174,6 @@ unity: cmake_check_build_system
 unity/fast:
 	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/build
 .PHONY : unity/fast
-
-command-tests.o: command-tests.c.o
-
-.PHONY : command-tests.o
-
-# target to build an object file
-command-tests.c.o:
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/command-tests.c.o
-.PHONY : command-tests.c.o
-
-command-tests.i: command-tests.c.i
-
-.PHONY : command-tests.i
-
-# target to preprocess a source file
-command-tests.c.i:
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/command-tests.c.i
-.PHONY : command-tests.c.i
-
-command-tests.s: command-tests.c.s
-
-.PHONY : command-tests.s
-
-# target to generate assembly for a file
-command-tests.c.s:
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/command-tests.c.s
-.PHONY : command-tests.c.s
 
 hlp/hlp.o: hlp/hlp.c.o
 
@@ -230,6 +229,63 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/main.c.s
 .PHONY : main.c.s
 
+pn532-driver/pn532.o: pn532-driver/pn532.c.o
+
+.PHONY : pn532-driver/pn532.o
+
+# target to build an object file
+pn532-driver/pn532.c.o:
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/pn532-driver/pn532.c.o
+.PHONY : pn532-driver/pn532.c.o
+
+pn532-driver/pn532.i: pn532-driver/pn532.c.i
+
+.PHONY : pn532-driver/pn532.i
+
+# target to preprocess a source file
+pn532-driver/pn532.c.i:
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/pn532-driver/pn532.c.i
+.PHONY : pn532-driver/pn532.c.i
+
+pn532-driver/pn532.s: pn532-driver/pn532.c.s
+
+.PHONY : pn532-driver/pn532.s
+
+# target to generate assembly for a file
+pn532-driver/pn532.c.s:
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/pn532-driver/pn532.c.s
+.PHONY : pn532-driver/pn532.c.s
+
+unit-tests/command-tests.o: unit-tests/command-tests.c.o
+
+.PHONY : unit-tests/command-tests.o
+
+# target to build an object file
+unit-tests/command-tests.c.o:
+	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unit-tests/command-tests.c.o
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/unit-tests/command-tests.c.o
+.PHONY : unit-tests/command-tests.c.o
+
+unit-tests/command-tests.i: unit-tests/command-tests.c.i
+
+.PHONY : unit-tests/command-tests.i
+
+# target to preprocess a source file
+unit-tests/command-tests.c.i:
+	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unit-tests/command-tests.c.i
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/unit-tests/command-tests.c.i
+.PHONY : unit-tests/command-tests.c.i
+
+unit-tests/command-tests.s: unit-tests/command-tests.c.s
+
+.PHONY : unit-tests/command-tests.s
+
+# target to generate assembly for a file
+unit-tests/command-tests.c.s:
+	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unit-tests/command-tests.c.s
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/unit-tests/command-tests.c.s
+.PHONY : unit-tests/command-tests.c.s
+
 unity/unity.o: unity/unity.c.o
 
 .PHONY : unity/unity.o
@@ -264,19 +320,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... pn532"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... unit-tests"
 	@echo "... hlp"
+	@echo "... edit_cache"
+	@echo "... pn532-driver"
 	@echo "... unity"
-	@echo "... command-tests.o"
-	@echo "... command-tests.i"
-	@echo "... command-tests.s"
 	@echo "... hlp/hlp.o"
 	@echo "... hlp/hlp.i"
 	@echo "... hlp/hlp.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pn532-driver/pn532.o"
+	@echo "... pn532-driver/pn532.i"
+	@echo "... pn532-driver/pn532.s"
+	@echo "... unit-tests/command-tests.o"
+	@echo "... unit-tests/command-tests.i"
+	@echo "... unit-tests/command-tests.s"
 	@echo "... unity/unity.o"
 	@echo "... unity/unity.i"
 	@echo "... unity/unity.s"

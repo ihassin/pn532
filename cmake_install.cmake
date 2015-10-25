@@ -31,6 +31,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/ThoughtWorks/Documents/projects/embedded/pn532/unity/cmake_install.cmake")
   include("/Users/ThoughtWorks/Documents/projects/embedded/pn532/hlp/cmake_install.cmake")
+  include("/Users/ThoughtWorks/Documents/projects/embedded/pn532/unit-tests/cmake_install.cmake")
+  include("/Users/ThoughtWorks/Documents/projects/embedded/pn532/pn532-driver/cmake_install.cmake")
 
 endif()
 

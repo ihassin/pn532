@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.3.2/CMakeSystem.cmake"
   "CMakeLists.txt"
   "hlp/CMakeLists.txt"
+  "pn532-driver/CMakeLists.txt"
+  "unit-tests/CMakeLists.txt"
   "unity/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -19,6 +21,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/CMakeUnixFindMake.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.3.2/share/cmake/Modules/Compiler/Clang.cmake"
@@ -44,11 +47,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "unity/CMakeFiles/CMakeDirectoryInformation.cmake"
   "hlp/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "unit-tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pn532-driver/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pn532.dir/DependInfo.cmake"
+  "CMakeFiles/unit-tests.dir/DependInfo.cmake"
   "CMakeFiles/hlp.dir/DependInfo.cmake"
+  "CMakeFiles/pn532-driver.dir/DependInfo.cmake"
   "CMakeFiles/unity.dir/DependInfo.cmake"
   )

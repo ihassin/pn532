@@ -100,8 +100,10 @@ clean: CMakeFiles/hlp.dir/clean
 # Target rules for target CMakeFiles/pn532.dir
 
 # All Build rule for target.
-CMakeFiles/pn532.dir/all: CMakeFiles/unity.dir/all
 CMakeFiles/pn532.dir/all: CMakeFiles/hlp.dir/all
+CMakeFiles/pn532.dir/all: CMakeFiles/unit-tests.dir/all
+CMakeFiles/pn532.dir/all: CMakeFiles/pn532-driver.dir/all
+CMakeFiles/pn532.dir/all: CMakeFiles/unity.dir/all
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/depend
 	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=3,4,5 "Built target pn532"
@@ -114,7 +116,7 @@ all: CMakeFiles/pn532.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pn532.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pn532.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 0
 .PHONY : CMakeFiles/pn532.dir/rule
@@ -135,13 +137,87 @@ clean: CMakeFiles/pn532.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pn532-driver.dir
+
+# All Build rule for target.
+CMakeFiles/pn532-driver.dir/all:
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/depend
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=6,7 "Built target pn532-driver"
+.PHONY : CMakeFiles/pn532-driver.dir/all
+
+# Include target in all.
+all: CMakeFiles/pn532-driver.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pn532-driver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pn532-driver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 0
+.PHONY : CMakeFiles/pn532-driver.dir/rule
+
+# Convenience name for target.
+pn532-driver: CMakeFiles/pn532-driver.dir/rule
+
+.PHONY : pn532-driver
+
+# clean rule for target.
+CMakeFiles/pn532-driver.dir/clean:
+	$(MAKE) -f CMakeFiles/pn532-driver.dir/build.make CMakeFiles/pn532-driver.dir/clean
+.PHONY : CMakeFiles/pn532-driver.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pn532-driver.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/unit-tests.dir
+
+# All Build rule for target.
+CMakeFiles/unit-tests.dir/all:
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/depend
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=8,9 "Built target unit-tests"
+.PHONY : CMakeFiles/unit-tests.dir/all
+
+# Include target in all.
+all: CMakeFiles/unit-tests.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/unit-tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/unit-tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles 0
+.PHONY : CMakeFiles/unit-tests.dir/rule
+
+# Convenience name for target.
+unit-tests: CMakeFiles/unit-tests.dir/rule
+
+.PHONY : unit-tests
+
+# clean rule for target.
+CMakeFiles/unit-tests.dir/clean:
+	$(MAKE) -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/clean
+.PHONY : CMakeFiles/unit-tests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/unit-tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/unity.dir
 
 # All Build rule for target.
 CMakeFiles/unity.dir/all:
 	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/depend
 	$(MAKE) -f CMakeFiles/unity.dir/build.make CMakeFiles/unity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=6,7 "Built target unity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=10,11 "Built target unity"
 .PHONY : CMakeFiles/unity.dir/all
 
 # Include target in all.
@@ -206,6 +282,42 @@ hlp/clean:
 hlp/preinstall:
 
 .PHONY : hlp/preinstall
+
+#=============================================================================
+# Directory level rules for directory unit-tests
+
+# Convenience name for "all" pass in the directory.
+unit-tests/all:
+
+.PHONY : unit-tests/all
+
+# Convenience name for "clean" pass in the directory.
+unit-tests/clean:
+
+.PHONY : unit-tests/clean
+
+# Convenience name for "preinstall" pass in the directory.
+unit-tests/preinstall:
+
+.PHONY : unit-tests/preinstall
+
+#=============================================================================
+# Directory level rules for directory pn532-driver
+
+# Convenience name for "all" pass in the directory.
+pn532-driver/all:
+
+.PHONY : pn532-driver/all
+
+# Convenience name for "clean" pass in the directory.
+pn532-driver/clean:
+
+.PHONY : pn532-driver/clean
+
+# Convenience name for "preinstall" pass in the directory.
+pn532-driver/preinstall:
+
+.PHONY : pn532-driver/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

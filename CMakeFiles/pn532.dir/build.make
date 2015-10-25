@@ -81,43 +81,45 @@ CMakeFiles/pn532.dir/main.c.o.provides: CMakeFiles/pn532.dir/main.c.o.requires
 CMakeFiles/pn532.dir/main.c.o.provides.build: CMakeFiles/pn532.dir/main.c.o
 
 
-CMakeFiles/pn532.dir/command-tests.c.o: CMakeFiles/pn532.dir/flags.make
-CMakeFiles/pn532.dir/command-tests.c.o: command-tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/pn532.dir/command-tests.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/pn532.dir/command-tests.c.o   -c /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.c
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.o: CMakeFiles/pn532.dir/flags.make
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.o: unit-tests/command-tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/pn532.dir/unit-tests/command-tests.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/pn532.dir/unit-tests/command-tests.c.o   -c /Users/ThoughtWorks/Documents/projects/embedded/pn532/unit-tests/command-tests.c
 
-CMakeFiles/pn532.dir/command-tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pn532.dir/command-tests.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.c > CMakeFiles/pn532.dir/command-tests.c.i
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pn532.dir/unit-tests/command-tests.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/ThoughtWorks/Documents/projects/embedded/pn532/unit-tests/command-tests.c > CMakeFiles/pn532.dir/unit-tests/command-tests.c.i
 
-CMakeFiles/pn532.dir/command-tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pn532.dir/command-tests.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/ThoughtWorks/Documents/projects/embedded/pn532/command-tests.c -o CMakeFiles/pn532.dir/command-tests.c.s
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pn532.dir/unit-tests/command-tests.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/ThoughtWorks/Documents/projects/embedded/pn532/unit-tests/command-tests.c -o CMakeFiles/pn532.dir/unit-tests/command-tests.c.s
 
-CMakeFiles/pn532.dir/command-tests.c.o.requires:
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.requires:
 
-.PHONY : CMakeFiles/pn532.dir/command-tests.c.o.requires
+.PHONY : CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.requires
 
-CMakeFiles/pn532.dir/command-tests.c.o.provides: CMakeFiles/pn532.dir/command-tests.c.o.requires
-	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/command-tests.c.o.provides.build
-.PHONY : CMakeFiles/pn532.dir/command-tests.c.o.provides
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.provides: CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.requires
+	$(MAKE) -f CMakeFiles/pn532.dir/build.make CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.provides.build
+.PHONY : CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.provides
 
-CMakeFiles/pn532.dir/command-tests.c.o.provides.build: CMakeFiles/pn532.dir/command-tests.c.o
+CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.provides.build: CMakeFiles/pn532.dir/unit-tests/command-tests.c.o
 
 
 # Object files for target pn532
 pn532_OBJECTS = \
 "CMakeFiles/pn532.dir/main.c.o" \
-"CMakeFiles/pn532.dir/command-tests.c.o"
+"CMakeFiles/pn532.dir/unit-tests/command-tests.c.o"
 
 # External object files for target pn532
 pn532_EXTERNAL_OBJECTS =
 
 pn532: CMakeFiles/pn532.dir/main.c.o
-pn532: CMakeFiles/pn532.dir/command-tests.c.o
+pn532: CMakeFiles/pn532.dir/unit-tests/command-tests.c.o
 pn532: CMakeFiles/pn532.dir/build.make
 pn532: libhlp.a
 pn532: libunity.a
+pn532: libunit-tests.a
+pn532: libpn532-driver.a
 pn532: CMakeFiles/pn532.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ThoughtWorks/Documents/projects/embedded/pn532/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable pn532"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pn532.dir/link.txt --verbose=$(VERBOSE)
@@ -128,7 +130,7 @@ CMakeFiles/pn532.dir/build: pn532
 .PHONY : CMakeFiles/pn532.dir/build
 
 CMakeFiles/pn532.dir/requires: CMakeFiles/pn532.dir/main.c.o.requires
-CMakeFiles/pn532.dir/requires: CMakeFiles/pn532.dir/command-tests.c.o.requires
+CMakeFiles/pn532.dir/requires: CMakeFiles/pn532.dir/unit-tests/command-tests.c.o.requires
 
 .PHONY : CMakeFiles/pn532.dir/requires
 
