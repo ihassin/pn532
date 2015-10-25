@@ -3,4 +3,4 @@ compiler:
   - gcc
 script:
   - cmake .
-  - ./debug/pn532
+  - ./home/travis/build/ihassin/pn532
