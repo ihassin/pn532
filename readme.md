@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ihassin/pn532.svg?branch=master)](https://travis-ci.org/ihassin/pn532)
+
 # PN532 Host Link Protocol (HLP) Helper Library
 
 This is a library written in C to abstract and ease the communications between your application and a PN532 board.
