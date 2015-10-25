@@ -31,12 +31,14 @@ Build the [test harness](https://github.com/ihassin/pn532/blob/master/main.c) an
 
 # Bill Of Material
 
+```
 +-- hlp							=> The HLP protocol library
 +-- main.c						=> Test harness
 +-- pn532-driver				=> Low level PN532 functions library
 +-- readme.md
 +-- unit-tests					=> The unit tests library
 L-- unity						=> Unity library
+```
 
 #Contributing
 
