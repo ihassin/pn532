@@ -3,4 +3,6 @@ compiler:
   - gcc
 script:
   - cmake .
+  - make clean all
   - ls
+  
