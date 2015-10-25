@@ -2,4 +2,6 @@ language: c
 compiler:
   - gcc
 script:
+  make
   ./pn532
+
