@@ -4,5 +4,5 @@ compiler:
 script:
   - cmake .
   - make clean all
-  - ls
-  
+  - ./pn532
+
