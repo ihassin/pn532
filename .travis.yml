@@ -2,6 +2,5 @@ language: c
 compiler:
   - gcc
 script:
-  cmake .
-  ./pn532
-
+  - cmake .
+  - ./pn532
