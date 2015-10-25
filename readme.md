@@ -29,6 +29,15 @@ Build the [test harness](https://github.com/ihassin/pn532/blob/master/main.c) an
 ./pn532
 ```
 
+# Bill Of Material
+
+├── hlp							=> The HLP protocol library
+├── main.c						=> Test harness
+├── pn532-driver				=> Low level PN532 functions library
+├── readme.md
+├── unit-tests					=> The unit tests library
+└── unity						=> Unity library
+
 #Contributing
 
 * Fork it (https://github.com/ihassin/pn532/fork)
@@ -44,5 +53,4 @@ We adhere to the code of conduct as described in the CODE_OF_CONDUCT file herein
 # License
 
 MIT, but respect the [Unity](https://github.com/ThrowTheSwitch/Unity) terms.
-
 
